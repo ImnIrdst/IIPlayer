@@ -7,8 +7,8 @@ import subprocess
 from tools.Play import play
 
 # Constants
-CONFIG_FILE_PATH = '/mnt/4E903A9B903A8A0B/Work/Gitlab/iiPlay/configs.json'
-DATA_BASE_FILE_PATH = '/mnt/4E903A9B903A8A0B/Work/Gitlab/iiPlay/db.json'
+CONFIG_FILE_PATH = '/mnt/4E903A9B903A8A0B/Work/Gitlab/iiPlay/files/configs.json'
+DATA_BASE_FILE_PATH = '/mnt/4E903A9B903A8A0B/Work/Gitlab/iiPlay/files/db.json'
 
 # Global variables
 db = None
@@ -90,7 +90,7 @@ def main():
         play_prev(arg2)
 
     elif sub_cmd == 'ls':
-        mkv_query = 'find ' + directory + ' -name "*mkv*"'
+        mkv_query = 'find ' + directory + ' -iname "*mkv*"'
         process = subprocess.Popen(mkv_query, shell=True, stdout=subprocess.PIPE)
         mkv_files = '"' + ''.join(process.stdout.readlines()).strip() + '"'
 

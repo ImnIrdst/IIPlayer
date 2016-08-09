@@ -1,16 +1,13 @@
 {
   "sub-scale": 0.3,
-  "shortcuts": {
-    "hoc": "-s House*of*Cards"
-  },
   "directory": {
     "series": {
       "arg": "-s",
       "directory": "/mnt/4E903A9B903A8A0B/Videos/Series/"
     },
     "movies": {
-      "arg": "-s",
-      "directory": "/mnt/4E903A9B903A8A0B/Videos/Series/"
+      "arg": "-f",
+      "directory": "/mnt/4E903A9B903A8A0B/Videos/Film/"
     }
   }
 }

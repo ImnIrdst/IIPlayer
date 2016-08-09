@@ -3,11 +3,11 @@ import subprocess
 
 
 def play(directory, name):
-    mkv_query = 'find ' + directory + ' -name "*' + name + '*mkv*"'
+    mkv_query = 'find ' + directory + ' -iname "*' + name + '*mkv*"'
     process = subprocess.Popen(mkv_query, shell=True, stdout=subprocess.PIPE)
     mkv_file = '"' + ''.join(process.stdout.readlines()).strip() + '"'
 
-    srt_query = 'find ' + directory + ' -name "*' + name + '*srt*"'
+    srt_query = 'find ' + directory + ' -iname "*' + name + '*srt*"'
     process = subprocess.Popen(srt_query, shell=True, stdout=subprocess.PIPE)
     srt_file = '"' + ''.join(process.stdout.readlines()).strip() + '"'
 
