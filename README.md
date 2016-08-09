@@ -31,44 +31,43 @@ A CLI player based on mpv, built for watching tv series easier.
 
 # usage
 
-add a shortcut (TODO)
+- add a shortcut (TODO)
+    
+    ```
+    iiplay add hoc House*of*Cards -s=01 -e=02
+    ```
 
-```
-iiplay add hoc House*of*Cards -s=01 -e=02
-```
+- play current episode
 
-play current 
+    ```
+    iiplay cur hoc
+    ```
 
-```
-iiplay cur hoc
-```
+- play next episode
 
-play next
+    ```
+    iiplay next hoc
+    ```
 
-```
-iiplay next hoc
-```
+- play previous episode
 
-play prev
+    ```
+    iiplay prev hoc
+    ```
 
-```
-iiplay previous hoc
-```
+- see history (last 3) (TODO)
 
-see history (last 3) (TODO)
+    ```
+    iiplay log -3
+    ```
 
-```
-iiplay history
-```
+- add the following film to the watching queue (TODO)
 
-add the following film to the watching queue (TODO)
+    ```
+    iiplay addq Never*Back*Down*2008
+    ```
+- print the watching queue (TODO)
 
-```
-iiplay add Never*Back*Down*2008
-```
-
-print the watching queue (TODO)
-
-```
-iiplay queue
-```
+    ```
+    iiplay queue
+    ```
